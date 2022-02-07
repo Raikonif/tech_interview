@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/layout/activity_main.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/layout/fragment_detail_post.xml" value="0.24427083333333333" />
-        <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/layout/fragment_favorites.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/layout/fragment_favorites.xml" value="0.264" />
         <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/layout/fragment_posts.xml" value="0.24427083333333333" />
+        <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/layout/item_comment.xml" value="0.28072916666666664" />
+        <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/layout/item_favorite.xml" value="0.28072916666666664" />
         <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/layout/item_post.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/Raikonif/AndroidStudioProjects/Tech_Interview/app/src/main/res/menu/bottom_navigation_bar.xml" value="0.25833333333333336" />
       </map>

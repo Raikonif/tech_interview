@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:src="@drawable/ic_baseline_circle_24"
             android:visibility="visible"/>
 
@@ -27,6 +27,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             tools:text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum" />
-
+        <ImageButton
+            android:id="@+id/btn_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_star_24"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:visibility="visible"
+            />
     </LinearLayout>
 </LinearLayout>
