@@ -13,9 +13,9 @@ import retrofit2.http.Query
 
 interface WebService {
     @GET("posts")
-    suspend fun getPostList(): Call<List<Post>>
+    suspend fun getPostList(): List<Post>
     @GET("comments")
-    suspend fun getComments():  Call<List<Comment>>
+    suspend fun getComments(): List<Comment>
     @GET("users")
     suspend fun getUser(): User
 

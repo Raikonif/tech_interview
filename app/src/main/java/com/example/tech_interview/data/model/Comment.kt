@@ -10,5 +10,3 @@ data class Comment(
     val email: String = "",
     val body: String = ""
 )
-
-data class CommentList(val resultCommentList: Call<List<Comment>>)

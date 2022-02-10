@@ -2,7 +2,9 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android'
-//    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+
 }
 
 android {
@@ -64,4 +66,18 @@ dependencies {
 
     //Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
+
+    //Concat Adapter
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    //Fragment
+    implementation 'androidx.fragment:fragment-ktx:1.4.1'
+
+    //Activity
+    implementation 'androidx.activity:activity-ktx:1.4.0'
+
+    //Play Services Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.1.1'
+
+//    implementation 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.0-alpha01'
 }

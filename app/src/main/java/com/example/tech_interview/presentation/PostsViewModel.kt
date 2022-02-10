@@ -4,10 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.liveData
 import com.example.tech_interview.core.Resource
-import com.example.tech_interview.data.model.Post
-import com.example.tech_interview.repository.PostRepository
+import com.example.tech_interview.repository.Posts.PostRepository
 import kotlinx.coroutines.Dispatchers
-import okhttp3.Dispatcher
 import java.lang.Exception
 
 class PostsViewModel(private val repo: PostRepository): ViewModel() {

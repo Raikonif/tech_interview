@@ -8,22 +8,26 @@ import com.example.tech_interview.repository.Posts.PostRepository
 import kotlinx.coroutines.Dispatchers
 import java.lang.Exception
 
-class CommentsViewModel(private val repo: PostRepository) {
+class UserViewModel(private val repo: PostRepository) : ViewModel() {
 
-    fun fetchComments() = liveData(Dispatchers.IO){
+    fun fetchUserAndComments() = liveData(Dispatchers.IO) {
         emit(Resource.Loading())
-        try{
+        try {
             emit(
                 Resource.Success(
-                repo.getComments()
-            ))
-        } catch (e: Exception){
+                    Pair(
+                        repo.getComments(),
+                        repo.getUser()
+                     )
+                )
+            )
+        } catch (e: Exception) {
             emit(Resource.Failure(e))
         }
     }
 }
 
-class CommentsViewModelFactory(private val repo: PostRepository): ViewModelProvider.Factory{
+class UserViewModelFactory(private val repo: PostRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return modelClass.getConstructor(PostRepository::class.java).newInstance(repo)
     }

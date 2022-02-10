@@ -10,11 +10,11 @@ import retrofit2.Call
 import retrofit2.Response
 
 class RemotePostDataSource(private val webService: WebService) {
-    suspend fun getPostList(): Call<List<Post>> {
+    suspend fun getPostList(): List<Post> {
         return  webService.getPostList()
     }
 
-    suspend fun getComments(): Call<List<Comment>>{
+    suspend fun getComments(): List<Comment>{
         return webService.getComments()
     }
 

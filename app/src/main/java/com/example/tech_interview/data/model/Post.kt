@@ -9,5 +9,3 @@ data class Post(
     val title: String = "",
     val body: String = ""
     )
-
-data class postsList(val resultPostList: Response<List<Post>>)

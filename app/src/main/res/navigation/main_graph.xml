@@ -23,5 +23,18 @@
         android:id="@+id/detailPostFragment"
         android:name="com.example.tech_interview.ui.postdetails.DetailPostFragment"
         android:label="fragment_detail_post"
-        tools:layout="@layout/fragment_detail_post" />
+        tools:layout="@layout/fragment_detail_post" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="body"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+    </fragment>
 </navigation>
