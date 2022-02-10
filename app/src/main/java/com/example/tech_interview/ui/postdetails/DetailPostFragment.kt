@@ -1,8 +1,10 @@
 package com.example.tech_interview.ui.postdetails
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.navArgs
@@ -41,7 +43,6 @@ class DetailPostFragment : Fragment(R.layout.fragment_detail_post) {
                 when (result) {
                     is Resource.Loading -> {
                         binding.pbDetails.visibility = View.VISIBLE
-                        binding.tvTitleDesc.visibility = View.GONE
                     }
                     is Resource.Success -> {
                         binding.pbDetails.visibility = View.GONE
@@ -63,6 +64,11 @@ class DetailPostFragment : Fragment(R.layout.fragment_detail_post) {
                             binding.tvUserEmail.text = result.data.second.email
                             binding.tvUserWebsite.text = result.data.second.website
                         }
+                    }
+                    is Resource.Failure -> {
+                        binding.pbDetails.visibility = View.GONE
+                        Toast.makeText(context, "Loading Failured", Toast.LENGTH_SHORT).show()
+                        Log.d("ErrorDetail","${result.exception}")
                     }
                 }
             }
